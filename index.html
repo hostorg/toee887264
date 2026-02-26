@@ -1,7 +1,3 @@
-
-<!DOCTYPE html>
-
-<html>
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -32,50 +28,109 @@
                 font-family: var(--site-font) !important;
             }
         </style>
+<style id="aiModalSpinnerStyles">
+        .ai-modal-content {
+            position: relative;
+        }
+
+        /* Overlay blocks everything */
+        .ai-modal-spinner {
+            position: absolute;
+            inset: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 20;
+            backdrop-filter: blur(1.5px);
+            pointer-events: auto; /* blocks modal */
+        }
+
+        /* Spinner itself should NOT intercept clicks */
+        .ai-modal-spinner * {
+            pointer-events: none;
+        }
+
+        /* Close button MUST be above overlay */
+        .ai-close {
+            align-self: flex-start;
+            margin-right: auto; /* push left */
+            margin-left: 0;
+            z-index: 30;
+        }
+
+
+        /* Spinner styling */
+        .ai-spinner {
+            width: 42px;
+            height: 42px;
+            border: 4px solid rgba(0,0,0,0.25);
+            border-top-color: #000;
+            border-radius: 50%;
+            animation: aiSpin 0.9s linear infinite;
+        }
+
+        @keyframes aiSpin {
+            to { transform: rotate(360deg); }
+        }
+
+    </style><style>
+.curtain-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  pointer-events: none;
+  z-index: 2;
+}
+</style>
 </head>
-<body class="theme-1">
-<div id="wrapper">
-<div data-src="header.html" id="header"></div>
-<div id="mainPageContent">
-<section class="section-wrapper about-65">
+<body class="theme-1" style="">
+<div class="" id="wrapper" style="pointer-events: auto;">
+<div class="" data-src="header.html" id="header"></div>
+<div class="" id="mainPageContent">
+<section class="section-wrapper about-65" id="section-2wtj057cjd4">
 <div class="container about-65-container">
 <div class="row about-65-row">
 <!-- LEFT IMAGE -->
 <div class="col-md-6 col-sm-12 about-65-image-col anim-slide-right">
 <div class="about-65-image-box">
-<img alt="NGO volunteer" class="about-65-image" src="assets/images/about-65-1.jpg"/>
+<img alt="NGO volunteer" class="about-65-image updateImg" data-original-src="assets/images/about-65-1.jpg" src="assets/images/about-65-1.jpg"/>
 <div class="about-65-image-overlay">
-<h3>Join us in<br/>making a difference</h3>
+<h3 class="">Join us in<br class=""/>making a difference</h3>
 </div>
 </div>
 </div>
 <!-- RIGHT CONTENT -->
 <div class="col-md-6 col-sm-12 about-65-content-col anim-slide-left">
-<h2 class="about-65-title">We are a trusted<br/>force for good</h2>
+<h2 class="about-65-title">We are a trusted<br class=""/>force for good</h2>
 <p class="about-65-subtitle">
                     Empowering communities through compassion, action, and sustainable change.
                 </p>
 <div class="about-65-line-box">
 <span class="about-65-line"></span>
-<p>
+<p class="">
                         We work tirelessly to support education, healthcare, and basic needs for underserved
                         communities. Together, we can build a future filled with hope and dignity.
                     </p>
 </div>
-<a class="about-65-btn" href="#">
+<a class="about-65-btn" href="#" style="cursor: pointer;">
                     READ MORE
                 </a>
 </div>
 </div>
 </div>
 </section>
-<section class="section-wrapper about-66">
+<section class="section-wrapper about-66" id="section-awsx6hjkgxq">
 <div class="container">
 <div class="row">
 <!-- Left Content -->
 <div class="col-md-6 anim-slide-right">
 <div class="about-66-subtitle">ABOUT US</div>
-<h2 class="about-66-title">Please Rise Your<br/>Helping Hand</h2>
+<h2 class="about-66-title">Please Rise Your<br class=""/>Helping Hand</h2>
 <p class="about-66-text">
                     We are a non-profit organization committed to improving lives through education,
                     healthcare, clean water, and community empowerment. Every helping hand brings hope,
@@ -87,10 +142,10 @@
 <div class="col-md-6 anim-slide-left">
 <div class="about-66-images">
 <div class="about-66-img about-66-img-lg">
-<img alt="NGO helping child with clean water" src="assets/images/about-66-1.jpg"/>
+<img alt="NGO helping child with clean water" class="updateImg" data-original-src="assets/images/about-66-1.jpg" src="assets/images/about-66-1.jpg"/>
 </div>
 <div class="about-66-img about-66-img-sm">
-<img alt="Child receiving care and support" src="assets/images/about-66-2.jpg"/>
+<img alt="Child receiving care and support" class="updateImg" data-original-src="assets/images/about-66-2.jpg" src="assets/images/about-66-2.jpg"/>
 </div>
 </div>
 </div>
@@ -101,8 +156,8 @@
 <div class="about-66-icon">
 <i class="bi bi-heart-fill"></i>
 </div>
-<h4>Our Mission</h4>
-<p>
+<h4 class="">Our Mission</h4>
+<p class="">
                     To uplift underprivileged communities by providing access to education,
                     healthcare, nutrition, and sustainable livelihood programs.
                 </p>
@@ -111,8 +166,8 @@
 <div class="about-66-icon">
 <i class="bi bi-eye-fill"></i>
 </div>
-<h4>Our Vision</h4>
-<p>
+<h4 class="">Our Vision</h4>
+<p class="">
                     A world where every individual lives with dignity, opportunity,
                     and hope regardless of background or circumstances.
                 </p>
@@ -121,8 +176,8 @@
 <div class="about-66-icon">
 <i class="bi bi-people-fill"></i>
 </div>
-<h4>Our Values</h4>
-<p>
+<h4 class="">Our Values</h4>
+<p class="">
                     Compassion, transparency, integrity, and community-driven impact
                     guide everything we do.
                 </p>
@@ -130,7 +185,7 @@
 </div>
 </div>
 </section>
-<section class="section-wrapper services-42">
+<section class="section-wrapper services-42" id="section-4k6ktkg6vp5">
 <div class="container services-42-container">
 <!-- Header -->
 <div class="row services-42-header anim-slide-up">
@@ -139,7 +194,7 @@
 <h2 class="services-42-title">Charitics Information Of Event Schedule</h2>
 </div>
 <div class="col-sm-4 col-xs-12 text-right services-42-btn-wrap">
-<a class="services-42-explore-btn" href="#">Explore More <i class="bi bi-arrow-right"></i></a>
+<a class="services-42-explore-btn" href="#" style="cursor: pointer;">Explore More <i class="bi bi-arrow-right"></i></a>
 </div>
 </div>
 <!-- Event Cards -->
@@ -148,16 +203,16 @@
 <div class="col-md-6 col-sm-6 col-xs-12">
 <div class="services-42-card d-flex">
 <div class="services-42-img-wrap">
-<span class="services-42-date">29<br/>July</span>
-<img alt="" src="assets/images/services-1.jpg"/>
+<span class="services-42-date">29<br class=""/>July</span>
+<img alt="" class="updateImg" data-original-src="assets/images/services-1.jpg" src="assets/images/services-1.jpg"/>
 </div>
 <div class="services-42-content-wrap">
-<h4>Community Food Donation Drive</h4>
-<p>Providing nutritious meals to underprivileged families through collective
+<h4 class="">Community Food Donation Drive</h4>
+<p class="">Providing nutritious meals to underprivileged families through collective
                             efforts.</p>
-<div class="services-42-venue"><span>Venue</span> 350 5th Avenue, New York, USA
+<div class="services-42-venue"><span class="">Venue</span> 350 5th Avenue, New York, USA
                         </div>
-<a class="services-42-details-btn" href="#"><i class="bi bi-heart-fill"></i> Event
+<a class="services-42-details-btn" href="#" style="cursor: pointer;"><i class="bi bi-heart-fill"></i> Event
                             Details</a>
 </div>
 </div>
@@ -166,14 +221,14 @@
 <div class="col-md-6 col-sm-6 col-xs-12">
 <div class="services-42-card d-flex">
 <div class="services-42-img-wrap">
-<span class="services-42-date">29<br/>July</span>
-<img alt="" src="assets/images/services-2.jpg"/>
+<span class="services-42-date">29<br class=""/>July</span>
+<img alt="" class="updateImg" data-original-src="assets/images/services-2.jpg" src="assets/images/services-2.jpg"/>
 </div>
 <div class="services-42-content-wrap">
-<h4>Child Education Support Program</h4>
-<p>Empowering young minds with quality education and learning resources.</p>
-<div class="services-42-venue"><span>Venue</span> Brooklyn Center, New York</div>
-<a class="services-42-details-btn" href="#"><i class="bi bi-book-half"></i> Event
+<h4 class="">Child Education Support Program</h4>
+<p class="">Empowering young minds with quality education and learning resources.</p>
+<div class="services-42-venue"><span class="">Venue</span> Brooklyn Center, New York</div>
+<a class="services-42-details-btn" href="#" style="cursor: pointer;"><i class="bi bi-book-half"></i> Event
                             Details</a>
 </div>
 </div>
@@ -182,14 +237,14 @@
 <div class="col-md-6 col-sm-6 col-xs-12">
 <div class="services-42-card d-flex">
 <div class="services-42-img-wrap">
-<span class="services-42-date">29<br/>July</span>
-<img alt="" src="assets/images/services-3.jpg"/>
+<span class="services-42-date">29<br class=""/>July</span>
+<img alt="" class="updateImg" data-original-src="assets/images/services-3.jpg" src="assets/images/services-3.jpg"/>
 </div>
 <div class="services-42-content-wrap">
-<h4>Free Medical Checkup Camp</h4>
-<p>Health awareness and medical assistance for low-income communities.</p>
-<div class="services-42-venue"><span>Venue</span> Queens Community Hall</div>
-<a class="services-42-details-btn" href="#"><i class="bi bi-hospital"></i> Event
+<h4 class="">Free Medical Checkup Camp</h4>
+<p class="">Health awareness and medical assistance for low-income communities.</p>
+<div class="services-42-venue"><span class="">Venue</span> Queens Community Hall</div>
+<a class="services-42-details-btn" href="#" style="cursor: pointer;"><i class="bi bi-hospital"></i> Event
                             Details</a>
 </div>
 </div>
@@ -198,23 +253,66 @@
 <div class="col-md-6 col-sm-6 col-xs-12">
 <div class="services-42-card d-flex">
 <div class="services-42-img-wrap">
-<span class="services-42-date">29<br/>July</span>
-<img alt="" src="assets/images/services-4.jpg"/>
+<span class="services-42-date">29<br class=""/>July</span>
+<img alt="" class="updateImg" data-original-src="assets/images/services-4.jpg" src="assets/images/services-4.jpg"/>
 </div>
 <div class="services-42-content-wrap">
-<h4>Women Empowerment Workshop</h4>
-<p>Skill development and self-employment guidance for women.</p>
-<div class="services-42-venue"><span>Venue</span> Manhattan NGO Center</div>
-<a class="services-42-details-btn" href="#"><i class="bi bi-people-fill"></i> Event
+<h4 class="">Women Empowerment Workshop</h4>
+<p class="">Skill development and self-employment guidance for women.</p>
+<div class="services-42-venue"><span class="">Venue</span> Manhattan NGO Center</div>
+<a class="services-42-details-btn" href="#" style="cursor: pointer;"><i class="bi bi-people-fill"></i> Event
                             Details</a>
 </div>
 </div>
 </div>
 </div>
 </div>
+</section><section class="section-wrapper home-45" id="section-xu6lsf2427">
+<div class="container">
+<h2 class="home-45-heading">Let's make brands<br class=""/>personal again</h2>
+<button class="home-45-btn">Join Waitlist</button>
+<div class="scope">
+<span class="" style="--i:1;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-1.jpg" src="assets/images/home-45-1.jpg"/></span>
+<span class="" style="--i:2;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-2.jpg" src="assets/images/home-45-2.jpg"/></span>
+<span class="" style="--i:3;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-3.jpg" src="assets/images/home-45-3.jpg"/></span>
+<span class="" style="--i:4;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-4.jpg" src="assets/images/home-45-4.jpg"/></span>
+<span class="" style="--i:5;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-5.jpg" src="assets/images/home-45-5.jpg"/></span>
+<span class="" style="--i:6;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-6.png" src="assets/images/home-45-6.png"/></span>
+<span class="" style="--i:7;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-7.jpg" src="assets/images/home-45-7.jpg"/></span>
+<span class="" style="--i:8;"><img alt="not found" class="updateImg" data-original-src="assets/images/home-45-8.png" src="assets/images/home-45-8.png"/></span>
+</div>
+<!-- Auto-Rotating Arc -->
+<!-- <div class="home-45-arc-wrapper">
+			<div class="home-45-arc">
+				<div class="home-45-image img-1"><img src="assets/images/volunteer-1.png" alt=""></div>
+				<div class="home-45-image img-2"><img src="assets/images/volunteer-2.png" alt=""></div>
+				<div class="home-45-image img-3"><img src="assets/images/volunteer-3.png" alt=""></div>
+				<div class="home-45-image img-4"><img src="assets/images/volunteer-4.png" alt=""></div>
+				<div class="home-45-image img-5"><img src="assets/images/volunteer-1.png" alt=""></div>
+				<div class="home-45-image img-6"><img src="assets/images/volunteer-2.png" alt=""></div>
+				<div class="home-45-image img-7"><img src="assets/images/volunteer-3.png" alt=""></div>
+				<div class="home-45-image img-8"><img src="assets/images/volunteer-4.png" alt=""></div>
+				<div class="home-45-image img-9"><img src="assets/images/volunteer-1.png" alt=""></div>
+				<div class="home-45-image img-10"><img src="assets/images/volunteer-2.png" alt=""></div>
+				<div class="home-45-image img-11"><img src="assets/images/volunteer-3.png" alt=""></div>
+				<div class="home-45-image img-12"><img src="assets/images/volunteer-4.png" alt=""></div>
+				<div class="home-45-image img-13"><img src="assets/images/volunteer-1.png" alt=""></div>
+				<div class="home-45-image img-14"><img src="assets/images/volunteer-12.png" alt=""></div>
+				<div class="home-45-image img-15"><img src="assets/images/volunteer-3.png" alt=""></div>
+				<div class="home-45-image img-16"><img src="assets/images/volunteer-4.png" alt=""></div>
+				<div class="home-45-image img-17"><img src="assets/images/volunteer-1.png" alt=""></div>
+				<div class="home-45-image img-18"><img src="assets/images/volunteer-2.png" alt=""></div>
+				<div class="home-45-image img-19"><img src="assets/images/volunteer-3.png" alt=""></div>
+				<div class="home-45-image img-20"><img src="assets/images/volunteer-4.png" alt=""></div>
+				<div class="home-45-image img-21"><img src="assets/images/volunteer-1.png" alt=""></div>
+				<div class="home-45-image img-22"><img src="assets/images/volunteer-2.png" alt=""></div>
+				<div class="home-45-image img-23"><img src="assets/images/volunteer-3.png" alt=""></div>
+			</div>
+		</div> -->
+</div>
 </section>
 </div>
-<div data-src="footer.html" id="footer"></div>
+<div class="" data-src="footer.html" id="footer"></div>
 </div>
 <script src="assets/js/middle-section.js"></script>
 <script src="assets/js/jquery.js"></script>
@@ -270,4 +368,3 @@
             </script>
 <script src="assets/js/common_js/image_uploader.js"></script>
 </body>
-</html>
